@@ -13,6 +13,8 @@ namespace API.Models
         public int Quantidade { get; set; }
         public DateTime CriadoEm { get; set; }
         public Categoria Categoria { get; set; }
+        public String Genero { get; set; }
+        public int Paginas { get; set; }
         public int CategoriaId { get; set; }
 
         public override string ToString() =>

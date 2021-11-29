@@ -3,8 +3,8 @@ POST https://localhost:5001/api/usuario/create
 Content-Type: application/json
 
 {
-    "Email" : "diogo@diogo.com",
-    "Senha" : "123",
+    "Email" : "livros@gmail.com",
+    "Senha" : "321",
     "Permissao" : "user"
 }
 
@@ -13,8 +13,8 @@ GET https://localhost:5001/api/usuario/login
 Content-Type: application/json
 
 {
-    "Email" : "diogo@diogo.com",
-    "Senha" : "123"
+    "Email" : "livros@gmail.com",
+    "Senha" : "321"
 }
 
 ### Sem autenticação
