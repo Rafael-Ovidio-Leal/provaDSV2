@@ -1,2 +1,0 @@
-### Inicializar dados
-POST https://localhost:5001/api/inicializar/create

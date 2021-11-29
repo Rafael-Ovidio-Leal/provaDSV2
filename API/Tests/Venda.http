@@ -1,2 +1,0 @@
-### Listar vendas
-POST https://localhost:5001/api/venda/list
