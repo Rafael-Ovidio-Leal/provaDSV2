@@ -34,7 +34,7 @@ namespace API.Controllers
             _context.Pagamentos.AddRange(new Pagamento[]
                 {
                     new Pagamento { PagamentoId = 1, Forma = "Boleto", Desconto = 0, Juros = 0},
-                    new Pagamento { PagamentoId = 2, Forma = "Pix", Desconto = 10, Juros = 0},
+                    new Pagamento { PagamentoId = 2, Forma = "Pix", Desconto = -10, Juros = 0},
                     new Pagamento { PagamentoId = 3, Forma = "PayPal", Desconto = 0, Juros = 5},
                 }
             );

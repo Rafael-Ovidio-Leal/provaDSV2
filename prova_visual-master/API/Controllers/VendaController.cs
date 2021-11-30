@@ -15,8 +15,24 @@ namespace API.Controllers
             _context = context;
         }
 
+        //POST: api/venda/create
+        [HttpPost]
+        [Route("create")]
+        public IActionResult Create([FromBody] Venda venda)
+        {
+            _context.Vendas.Add(venda);
+            _context.SaveChanges();
+            return Created("", venda);
+        }
+
         //GET: api/venda/list
         //ALTERAR O MÉTODO PARA MOSTRAR TODOS OS DADOS DA VENDA E OS DADOS RELACIONADOS
+
+        // [HttpGet]
+        // [Route("list")]
+        // public async Task<IActionResult> ListAsync() =>
+        // 	Ok(await _context.Vendas.Include(p => p.Categoria).ToListAsync());
+
         [HttpGet]
         [Route("list")]
         public IActionResult List()

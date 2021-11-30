@@ -1,0 +1,32 @@
+<mat-card>
+    <mat-card-title> Finalizar Venda </mat-card-title>
+    <mat-card-content>
+
+      <div class="usuario">
+
+        <mat-card>
+            <mat-card-content>
+              <div class="conteudo-usuario">
+                <mat-form-field>
+                  <mat-label for="nome">Nome do cliente</mat-label>
+                  <input matInput placeholder="Nome Cliente" type="text" name="nome" [(ngModel)]="nome" />
+                </mat-form-field>
+              </div>
+            </mat-card-content>
+
+            <mat-form-field class="full-width" appearance="fill">
+                <mat-label>Pagamentos</mat-label>
+                <select matNativeControl class="form-control" [(ngModel)]="pagamento">
+                    <option *ngFor="let pagamento of pagamentos" [ngValue]="pagamento">{{pagamento.forma}}  </option>
+                </select>
+            </mat-form-field>
+        </mat-card>
+
+      </div>
+
+        <mat-card-actions>
+            <button mat-raised-button color="warn" (click)="finalizar()">Finalizar Venda</button>
+        </mat-card-actions>
+
+    </mat-card-content>
+</mat-card>
