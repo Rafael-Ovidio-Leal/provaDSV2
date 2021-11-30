@@ -49,17 +49,10 @@ export class PagamentoComponent implements OnInit {
   }
 
   finalizar(){
-        if(this.pagamento[0].desconto != null || this.pagamento[0].juros != null){
-            this.disc = this.pagamento[0].desconto != null ? this.pagamento[0].desconto : this.pagamento[0].juros;
-        }else this.disc = 0
-
-
-        this.total = this.valorTotal - this.disc
     let venda: Venda = {
         cliente: this.nome,
         pagamento: this.pagamento,
         itens: this.itens,
-        valor: this.total,
     };
 
     console.log(venda);
